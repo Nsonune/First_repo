@@ -5,4 +5,9 @@
   - name: i want to install apache2 webserver
     apt:
      name: apache2
-     state: present 
+     state: present
+  - name : start apach2 webserver
+    service :
+     name : htppd
+     state : started
+
